@@ -2,8 +2,11 @@
 
 angular.
   module('petsApp').
-  config(['$routeProvider',
-    function config($routeProvider) {
+  config(['$routeProvider','$locationProvider',
+    function config($routeProvider,$locationProvider) {
+
+      $locationProvider.hashPrefix('!');
+
       $routeProvider.
         when('/home', {
           controller: 'petListController',
