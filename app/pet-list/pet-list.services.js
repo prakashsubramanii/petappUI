@@ -129,7 +129,7 @@ angular.module('petList').factory('petListService', ['$http', '$window', '$rootS
         method: 'POST',
         type: 'JSON',
         data: petObj,
-        url: 'http://13.234.118.1:9090/api/pets/'
+        url: 'http://13.234.118.1:9090/PetPeers/api/pets/'
       });
     }
 
@@ -138,7 +138,7 @@ angular.module('petList').factory('petListService', ['$http', '$window', '$rootS
         method: 'POST',
         type: 'JSON',
         data: petObj,
-        url: 'http://13.234.118.1:9090/api/pets/'
+        url: 'http://13.234.118.1:9090/PetPeers/api/pets/'
       });
     }
 
@@ -147,7 +147,7 @@ angular.module('petList').factory('petListService', ['$http', '$window', '$rootS
         method: 'POST',
         type: 'JSON',
         data: petObj,
-        url: 'http://13.234.118.1:9090/api/pets/'
+        url: 'http://13.234.118.1:9090/PetPeers/api/pets/'
       });
     }
 
@@ -161,7 +161,7 @@ angular.module('petList').factory('petListService', ['$http', '$window', '$rootS
         type: 'JSON',
         data: petObj,
         params: params,
-        url: 'http://13.234.118.1:9090/api/pets/filter'
+        url: 'http://13.234.118.1:9090/PetPeers/api/pets/filter'
       });
 
     }
@@ -170,7 +170,7 @@ angular.module('petList').factory('petListService', ['$http', '$window', '$rootS
       return $http({
         method: 'PUT',
         type: 'JSON',
-        url: 'http://13.234.118.1:9090/api/pets/' + petObj.petId
+        url: 'http://13.234.118.1:9090/PetPeers/api/pets/' + petObj.petId
       });
     }
 

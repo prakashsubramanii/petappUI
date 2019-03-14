@@ -20,7 +20,7 @@ angular.module('authenticationApp').factory('authenticationService', ['Base64', 
         method: 'POST',
         type: 'JSON',
         data: userObj,
-        url: 'http://10.117.189.86:8080/api/user/'
+        url: 'http://10.117.189.86:9090/PetPeers/api/user/'
       });
     }
 
@@ -42,7 +42,7 @@ angular.module('authenticationApp').factory('authenticationService', ['Base64', 
       return $http({
         method: 'GET',
         type: 'JSON',
-        url: 'http://10.117.189.86:8080/api/user/authenticate'
+        url: 'http://10.117.189.86:9090/PetPeers/api/user/authenticate'
       });
     }
 

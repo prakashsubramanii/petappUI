@@ -81,7 +81,7 @@ angular.module('petList')
                                     }
                                 
                                 if ($location.path().indexOf("mypets") > -1) {
-                                        $http.get('http://13.234.118.1:9090/api/pets/mypets',config).then(function (response) {
+                                        $http.get('http://13.234.118.1:9090/PetPeers/api/pets/mypets',config).then(function (response) {
                                                 self.pets = response.data.content;
                                                 console.log(JSON.stringify(response.data));
                                                 
@@ -90,7 +90,7 @@ angular.module('petList')
                                         });
                                 }
                                 else {
-                                        $http.get('http://13.234.118.1:9090/api/pets/',config).then(function (response) {
+                                        $http.get('http://13.234.118.1:9090/PetPeers/api/pets/',config).then(function (response) {
                                                 console.log(JSON.stringify(response));
                                                 console.log(JSON.stringify(self.filteredPets));
                                                 self.pets = response.data.content;
